@@ -1,3 +1,62 @@
+<h1> Sistema de Gerenciamento de Biblioteca</h1>
+
+
+Descrição
+
+Este projeto implementa um sistema de gerenciamento de biblioteca em Java, utilizando os quatro pilares da Programação Orientada a Objetos (POO): Abstração, Encapsulamento, Herança e Polimorfismo. O sistema permite gerenciar livros e usuários, realizar empréstimos e devoluções, e consultar o status dos itens da biblioteca.
+
+O projeto foi desenvolvido como parte do desafio de POO, com o objetivo de praticar os conceitos fundamentais de orientação a objetos e criar uma solução modular, extensível e bem documentada.
+
+Estrutura do Projeto
+
+O projeto é organizado em um pacote br.com.biblioteca e contém as seguintes classes principais:
+
+
+
+
+
+ItemBiblioteca (interface): Define métodos abstratos para empréstimo, devolução e obtenção de detalhes de itens.
+
+
+
+Item (classe abstrata): Classe base que encapsula atributos comuns a todos os itens da biblioteca (ex.: ID, título, status de empréstimo).
+
+
+
+Livro (classe): Herda de Item e implementa ItemBiblioteca, representando livros com atributos específicos (ex.: autor, ano de publicação).
+
+
+
+Usuario (classe): Gerencia informações de usuários, como ID e nome.
+
+
+
+Biblioteca (classe): Gerencia a coleção de itens e usuários, com métodos para adicionar itens/usuários, realizar empréstimos e devoluções, e exibir detalhes.
+
+
+
+Main (classe): Contém o método principal para demonstrar o uso do sistema.
+
+Pilares da POO Aplicados
+
+
+
+
+
+Abstração: Utilizada na interface ItemBiblioteca, que define comportamentos genéricos para itens.
+
+
+
+Encapsulamento: Atributos privados com acesso controlado por getters e setters.
+
+
+
+Herança: Classe Livro herda de Item para reutilizar código.
+
+
+
+Polimorfismo: Métodos como emprestar, devolver e getDetalhes são implementados de forma específica na classe Livro.
+
 <h1> Desafio: Aprenda na Prática Programação Orientada a Objetos</h1>
 
 <p align="center"> 📜 <a href="https://academiapme-my.sharepoint.com/:p:/g/personal/camila_cavalcante_dio_me/EaXyYOjBaFpZjkxhexMo5EcBKMEEAI5t5aHlsTjnBQJlUw?e=nxdB6C"> SLIDES APRESENTADO NO PROJETO </a> 📜 </P>
